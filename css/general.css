@@ -1,0 +1,39 @@
+:root {
+    --header-text: #24242C;
+    --footer-bg: #1E1E26;
+    --green: #91C33C;
+    --white: #ffffff;
+    --grey: #F7F7F7;
+    --text: #656774;
+}
+
+
+html,body {
+    color: var(--text)
+}
+
+
+#to-top {
+    font-size: 2.3em;
+    position: fixed;
+    display: none;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+#to-top:hover {
+    animation: buttons-scale .6s .1s linear infinite;
+}
+
+.header {
+    font-weight: 600;
+    color: var(--header-text);
+}
+
+.input-clear {
+    border: none;
+    outline: none;
+    background: none;
+}

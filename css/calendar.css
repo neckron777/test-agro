@@ -1,0 +1,84 @@
+.calendar {
+    width: 2230px;
+    height: 280px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.calendar--head {
+    padding: .8em ;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.calendar--head span {
+    font-weight: 600;
+    color: var(--green);
+    margin: 0 .4em;
+}
+
+.calendar--head-month {
+    font-size: 1em;
+    
+}
+
+.calendar--head-year {
+    font-size: .7em;
+    align-self: flex-end;
+}
+
+.calendar--days-of-week {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.calendar--day-of-week {
+    color: var(--header-text);
+    width: 30px;
+    height: 30px;
+    font-size: .75em;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar--body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    padding: .4em 0;
+}
+
+.calendar--list {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+}
+
+.calendar--day {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    font-size: .8em;
+    justify-content: center;
+    align-items: center;
+    color: var(--header-text);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.calendar--day:hover,
+.calendar--day_selected {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.calendar--day_empty {
+    overflow: hidden;
+}
+.calendar--day_empty:hover {
+    border-color: transparent;
+}
